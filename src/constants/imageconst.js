@@ -1,0 +1,1 @@
+export const a=require('./../assets/images/kkk.png')
