@@ -1,7 +1,7 @@
+import Box from '@components/Box';
+import Header from '@components/Header';
+import support from '@styles/support';
 import { Alert, FlatList, Linking, SafeAreaView, Text } from 'react-native';
-import Box from '../../components/Box';
-import Header from '../../components/Header';
-import support from '../../styles/support';
 const Support = () => {
     const makePhoneCall = () => {
     Linking.openURL('tel:123456789').catch(err => console.error('Phone call error:', err));
@@ -15,7 +15,7 @@ const Support = () => {
 
   return (
     <SafeAreaView >
-       <Header title={"umesh +"}/>
+       <Header title={"umesh+"}/>
        <Text style={support.supportHeader}> Contact Us At Below Platforms. </Text>
        <FlatList
   data={supportOptions}

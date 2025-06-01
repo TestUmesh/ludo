@@ -1,14 +1,16 @@
 import { Stack } from "expo-router";
 import { useState } from "react";
+ function RootLayout() {
 
-export default function RootLayout() {
- 
-  const [login ,setlogin]=useState(true);
+  const [islogin, setislogin]=useState(false)
+
+
   return (
-    <Stack  screenOptions={{headerShown:false}} >{login ?
-     <Stack.Screen name="(tabs)"/>:
-     <Stack.Screen name="index"/>
-}
+    <Stack screenOptions={{ headerShown: false }}>
+     {islogin?
+      <Stack.Screen name="(drawer)" />  : <Stack.Screen name="index" />  
+     }
     </Stack>
   );
 }
+export default RootLayout;

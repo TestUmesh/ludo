@@ -1,10 +1,11 @@
+import Header from '@components/Header';
 import { SafeAreaView } from 'react-native';
-import Header from '../../components/Header';
+
 
 const Refer = () => {
   return (
     <SafeAreaView>
-       <Header title={"umesh +"}/>
+     <Header  title={"umesh +"}/>
      </SafeAreaView>
   )
 }

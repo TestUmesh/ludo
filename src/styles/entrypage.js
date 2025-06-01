@@ -7,7 +7,7 @@ const entry= StyleSheet.create({
   flexDirection: 'row',
   flexWrap: 'wrap',
   justifyContent: 'space-between',
-  padding: 10,
+  padding: 10,  
 },
 entryImageBox: {
   width: '48%',
