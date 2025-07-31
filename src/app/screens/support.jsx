@@ -1,7 +1,7 @@
 import Box from '@components/Box';
 import Header from '@components/Header';
 import support from '@styles/support';
-import { Alert, FlatList, Linking, SafeAreaView, Text } from 'react-native';
+import { FlatList, Linking, SafeAreaView, Text } from 'react-native';
 const Support = () => {
     const makePhoneCall = () => {
     Linking.openURL('tel:123456789').catch(err => console.error('Phone call error:', err));
@@ -10,7 +10,7 @@ const Support = () => {
   const supportOptions = [
   { id: '1', text: 'WhatsApp', name: 'logo-whatsapp', color: 'green', onPress: () => Linking.openURL('https://wa.me/1234567890') },
   { id: '2', text: '123456789', name: 'call', color: 'blue', onPress: () => Linking.openURL('tel:123456789') },
-  { id: '3', text: 'Email', name: 'mail', color: 'blue', onPress: () => Alert.alert('Email', 'Clicked Email') },
+  // { id: '3', text: 'Email', name: 'mail', color: 'blue', onPress: () => Alert.alert('Email', 'Clicked Email') },
 ];
 
   return (
